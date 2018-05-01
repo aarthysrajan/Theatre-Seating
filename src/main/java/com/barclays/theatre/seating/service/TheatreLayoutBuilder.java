@@ -31,7 +31,7 @@ public class TheatreLayoutBuilder {
 			for (String sectionText : sectionTexts) {
 				int sectionCapacity;
 				try {
-					sectionCapacity = Integer.parseInt(sectionText);
+					sectionCapacity = Integer.parseInt(sectionText.trim());
 				} catch (NumberFormatException e) {
 					SeatingException seatingException = new SeatingException("Invalid entry for section capacity in "
 							+ "theatre layout. Seat capacity must be a number but found " + sectionText, e);

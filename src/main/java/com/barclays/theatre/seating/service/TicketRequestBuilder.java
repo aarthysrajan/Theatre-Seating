@@ -33,7 +33,7 @@ public class TicketRequestBuilder {
 			String name = sectionTexts[0];
 			int numberOfTickets;
 			try {
-				numberOfTickets = Integer.parseInt(sectionTexts[1]);
+				numberOfTickets = Integer.parseInt(sectionTexts[1].trim());
 			} catch (NumberFormatException numFormExc) {
 				SeatingException seatingException = new SeatingException(
 						"Invalid entry for number of tickets requested. Tickets requested must be a number but found "
