@@ -20,14 +20,10 @@ import com.barclays.theatre.seating.model.TicketRequest;
 public class DeafultTheatreSeatingAlgorithm implements ITheatreSeatingAlgorithm {
 
 	/* (non-Javadoc)
-	 * @see com.xyz.theatre.seating.ITheatreSeater#reserve(com.xyz.theatre.seating.TheatreLayout, java.util.List)
+	 * @see com.barclays.theatre.seating.ITheatreSeater#reserve(com.barclays.theatre.seating.model.TheatreLayout, java.util.List)
 	 */
 	@Override
 	public List<Reservation> reserve(final TheatreLayout layout, final List<TicketRequest> ticketRequests) throws SeatingException{
-		// Sort the ticket requests by number of parties in each request 
-		// makes sure it fills as many orders as possible
-		//List<TicketRequest> ticketRequestList = new LinkedList<TicketRequest>(ticketRequests);
-		//Collections.sort(ticketRequestList, new TicketRequestComparator());
 		
 		List<Row> rows = layout.getRows();
 		List<Reservation> reservationsList = new LinkedList<Reservation>();
