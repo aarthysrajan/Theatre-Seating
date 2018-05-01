@@ -5,7 +5,8 @@ import static org.junit.Assert.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.junit.Test;
-import com.barclays.theatre.seating.service.TheatreLayout;
+
+import com.barclays.theatre.seating.model.TheatreLayout;
 import com.barclays.theatre.seating.service.TheatreLayoutBuilder;
 
 public class TheatreLayoutBuilderTest {

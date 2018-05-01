@@ -11,9 +11,12 @@ import com.barclays.theatre.seating.exceptions.SeatingException;
 import com.barclays.theatre.seating.model.Reservation;
 import com.barclays.theatre.seating.model.Row;
 import com.barclays.theatre.seating.model.Section;
+import com.barclays.theatre.seating.model.TheatreLayout;
 import com.barclays.theatre.seating.model.TicketRequest;
 
 /**
+ * A concrete implementation of teh strategy interface {@link ITheatreSeatingAlgorithm}.
+ * 
  * @author Aarthy Rajan
  *
  */

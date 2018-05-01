@@ -1,15 +1,17 @@
 /**
  * 
  */
-package com.barclays.theatre.seating.service;
+package com.barclays.theatre.seating.model;
 
 import java.util.List;
 
 import com.barclays.theatre.seating.exceptions.SeatingException;
-import com.barclays.theatre.seating.model.Reservation;
-import com.barclays.theatre.seating.model.TicketRequest;
+import com.barclays.theatre.seating.service.DeafultTheatreSeatingAlgorithm;
+import com.barclays.theatre.seating.service.ITheatreSeatingAlgorithm;
 
 /**
+ * Represents the entire Theatre.
+ * 
  * @author Aarthy Rajan
  *
  */
@@ -25,6 +27,13 @@ public class Theatre {
 		this.layout = layout;
 	}
 	
+	/***
+	 * Method to perform a reservation. Internally uses the decoupled algorithm using the strategy
+	 * design pattern.
+	 * @param ticketRequest
+	 * @return
+	 * @throws SeatingException
+	 */
 	public List<Reservation> reserve(List<TicketRequest> ticketRequest) throws SeatingException {
 		return this.theatreSeaterAlgorithm.reserve(this.layout, ticketRequest);
 	}

@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import com.barclays.theatre.seating.model.Row;
 import com.barclays.theatre.seating.model.Section;
+import com.barclays.theatre.seating.model.TheatreLayout;
 import com.barclays.theatre.seating.model.TicketRequest;
-import com.barclays.theatre.seating.service.TheatreLayout;
 
 public class TheatreLayoutTest {
 

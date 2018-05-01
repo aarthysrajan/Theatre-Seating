@@ -9,6 +9,8 @@ import java.util.logging.Logger;
 
 import com.barclays.theatre.seating.exceptions.SeatingException;
 import com.barclays.theatre.seating.model.Reservation;
+import com.barclays.theatre.seating.model.Theatre;
+import com.barclays.theatre.seating.model.TheatreLayout;
 import com.barclays.theatre.seating.model.TicketRequest;
 import com.barclays.theatre.seating.utils.FileUtils;
 

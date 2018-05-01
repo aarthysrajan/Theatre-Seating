@@ -4,6 +4,8 @@
 package com.barclays.theatre.seating.model;
 
 /**
+ * Represents one section within a row in the Theatre Layout
+ * 
  * @author Aarthy Rajan
  *
  */
@@ -23,14 +25,30 @@ public class Section {
 		this.sectionNumber = sectionNumber;
 	}
 
+	/***
+	 * Returns true if there is atleast one available set in this section
+	 * @return
+	 */
 	public boolean isSeatAvailable() {
 		return availableSeats > 0;
 	}
 	
+	/***
+	 * Does this section have the capacity to make a reservation (in full). Returns true if yes.
+	 *  
+	 * @param ticketRequest
+	 * @return
+	 */
 	public boolean canReserve(TicketRequest ticketRequest) {
 		return ticketRequest.getNumberOfTickets() <= this.availableSeats;
 	}
 	
+	/***
+	 * Reserves the requested number of seats in this section.
+	 * 
+	 * @param ticketRequest
+	 * @return
+	 */
 	public synchronized boolean reserve(TicketRequest ticketRequest) {
 		this.availableSeats = this.availableSeats - ticketRequest.getNumberOfTickets();
 		return true;
