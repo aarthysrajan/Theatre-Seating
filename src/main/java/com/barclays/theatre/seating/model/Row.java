@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * This is a row in the theatre layout. A row has one or more sections. 
  * @author Aarthy Rajan
  *
  */
