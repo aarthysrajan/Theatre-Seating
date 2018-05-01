@@ -1,5 +1,4 @@
 # Theatre-Seating
-Theatre-Seating Solution
 
 An object oriented solution for a seating algorithm / tool using Java. The design includes the builder and strategy design patterns.
 
