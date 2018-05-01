@@ -6,6 +6,8 @@ package com.barclays.theatre.seating.model;
 import com.barclays.theatre.seating.model.ReservationState;
 
 /**
+ * The state of a reservation per order. This is the result of processing 
+ * an order.
  * @author Aarthy Rajan
  *
  */
