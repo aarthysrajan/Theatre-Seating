@@ -76,7 +76,7 @@ public class TheatreDriver {
 			}
 
 			if (null != output) {
-				logger.info(output);
+				System.out.println(output);
 			}
 		}
 	}
